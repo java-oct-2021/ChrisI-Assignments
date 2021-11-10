@@ -108,8 +108,8 @@ public class QuestionController {
 		if(result.hasErrors()) {
 			return "question.jsp";
 		} else {
-			answerForm.setQuestion(question);
-			Answer answer = aServe.add(answerForm);
+//			answerForm.setQuestion(question);
+			aServe.add(answerForm);
 
 			return "redirect:/questions/"+questionId;			
 		}

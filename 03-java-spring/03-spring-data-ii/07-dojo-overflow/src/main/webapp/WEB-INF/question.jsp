@@ -47,6 +47,7 @@
 				<form:textarea class="form-control" path="answer" id="answer" rows="5"></form:textarea>
 				<form:errors path="answer" class="text-danger"></form:errors>
 			</div>
+			<form:hidden path="question" value="${ question.id }"/> 
 			<input type="submit" value="Answer it!" class="btn btn-primary" />
 		</form:form>
 	</div>
